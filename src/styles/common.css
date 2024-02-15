@@ -1,0 +1,31 @@
+:root {
+	--white: #fff;
+	--blue: rgb(17, 153, 190);
+	--grey: #ddd4d4;
+	--greyWeek: #d6d1d1;
+	--greyBold: rgb(138, 137, 141);
+	--black: #0000;
+}
+
+.App {
+	font-family: 'Montserrat', sans-serif;
+
+	background-color: var(--grey);
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 22% auto;
+
+	height: 97%;
+	width: 97%;
+	border-radius: 1rem;
+	background-color: var(--white);
+	box-shadow: 0 0 3px 3px var(--greyWeek);
+	overflow: hidden;
+}

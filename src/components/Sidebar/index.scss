@@ -1,0 +1,86 @@
+// logo
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	padding-top: 1rem;
+	transition: all 0.3s ease;
+	color: var(--black);
+
+	&__logo {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-size: 14px;
+		font-weight: 700;
+		height: 4%;
+		cursor: pointer;
+
+		img {
+			width: 3rem;
+			height: 3rem;
+		}
+
+		span {
+			color: black;
+		}
+	}
+}
+
+// menu
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	margin-top: 4rem;
+
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 0.7rem;
+		margin-left: 2rem;
+		height: 3rem;
+		position: relative;
+		transition: all 0.3s ease;
+		border-radius: 0.7rem;
+		user-select: none;
+		font-size: 14px;
+
+		a {
+			color: black;
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		img {
+			width: 1.5rem;
+			height: 1.5rem;
+		}
+
+		span {
+			color: black;
+		}
+	}
+
+	&__item:last-child {
+		position: absolute;
+		bottom: 1.5rem;
+		width: 100%;
+	}
+}
+
+.active {
+	background-color: var(--grey);
+	margin-left: 0;
+}
+
+.active::before {
+	content: "";
+	width: 8px;
+	height: 100%;
+	background-color: var(--greyBold);
+	margin-right: calc(1rem - 8px);
+}
