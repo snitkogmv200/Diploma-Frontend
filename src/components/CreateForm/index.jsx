@@ -1,13 +1,13 @@
-import { Button } from "@mui/base";
 import { Link } from "react-router-dom";
+import "./index.scss"
 
 const CreateForm = ({ link }) => {
 	return (
 		<div>
 			<Link to={link}>
-				<Button variant="contained" color="success">
+				<button className="button__form" variant="contained" color="success">
 					ДОБАВИТЬ КОМПОНЕНТ
-				</Button>
+				</button>
 			</Link>
 		</div>
 	);

@@ -1,13 +1,17 @@
 import { useState } from "react";
 
-const OrderFilter = ({ orderQuery, setSearchParams }) => {
-	const [search, setSearch] = useState(orderQuery)
+const OrderFilter = ({ setSearchParams, needQuery, keyAddress }) => {
+	const [search, setSearch] = useState(needQuery)
 
 	const handleSubmit = (e) => {
 		e.preventDefault()
 		const form = e.target
 		const query = form.search.value
-		setSearchParams({ orderUserID: query })
+
+		const params = {}
+
+		if (query.length) params[keyAddress] = query
+		setSearchParams(params)
 	}
 
 	return (

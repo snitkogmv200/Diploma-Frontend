@@ -3,7 +3,7 @@
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	padding-top: 1rem;
+	padding-top: 0.5rem;
 	transition: all 0.3s ease;
 	color: var(--black);
 
@@ -13,7 +13,6 @@
 		align-items: center;
 		font-size: 14px;
 		font-weight: 700;
-		height: 4%;
 		cursor: pointer;
 
 		img {
@@ -33,7 +32,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
-	margin-top: 4rem;
+	margin-top: 1rem;
 
 	&__item {
 		display: flex;
@@ -83,4 +82,18 @@
 	height: 100%;
 	background-color: var(--greyBold);
 	margin-right: calc(1rem - 8px);
+}
+
+@media screen and (max-width: 1200px) {
+	.menu__item span {
+		display: none;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.sidebar__logo span {
+		display: none;
+	}
 }

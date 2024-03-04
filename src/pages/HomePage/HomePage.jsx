@@ -4,17 +4,15 @@ import "./HomePage.scss"
 
 const HomePage = () => {
 	return (
-		<div className="editing">
-			<div className="editing__items">
-				{homeData.map((item, index) => {
-					return (
-						<Link key={index} className="editing__item" to={item.to}>
-							<h2>{item.title}</h2>
-							<img src={item.img} alt={item.img} />
-						</Link>
-					)
-				})}
-			</div>
+		<div className="editing__items">
+			{homeData.map((item, index) => {
+				return (
+					<Link key={index} className="editing__item" to={item.to}>
+						<h2>{item.title}</h2>
+						<img src={item.img} alt={item.img} />
+					</Link>
+				)
+			})}
 		</div>
 	);
 }

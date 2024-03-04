@@ -1,0 +1,11 @@
+.main {
+	max-height: 97vh;
+	height: 100%;
+
+	&__wrapper {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		padding: 20px 15px;
+	}
+}

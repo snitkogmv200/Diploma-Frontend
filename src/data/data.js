@@ -13,7 +13,7 @@ export const sidebarData = [
 	{
 		icon: orders,
 		heading: "Orders",
-		to: "/orders"
+		to: "/order"
 	},
 	{
 		icon: products,
@@ -28,7 +28,7 @@ export const sidebarData = [
 	{
 		icon: warehouses,
 		heading: "Warehouses",
-		to: "/warehouses"
+		to: "/warehouse"
 	},
 ]
 
@@ -36,7 +36,7 @@ export const homeData = [
 	{
 		title: "Просмотр компонента Orders",
 		img: orders,
-		to: "/orders"
+		to: "/order"
 	},
 	{
 		title: "Просмотр компонента Products",
@@ -51,7 +51,7 @@ export const homeData = [
 	{
 		title: "Просмотр компонента Warehouses",
 		img: warehouses,
-		to: "/warehouses"
+		to: "/warehouse"
 	}
 ]
 
